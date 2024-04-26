@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 12bc135597b8c474cbf6680dcfd420b5
+guid: af4cbc97e751a844b8b256aa5f9c46b6
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 31
+    spritePixelsToUnits: 32
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638491237019893056
+  platformSettingsDirtyTick: 638497231491160760
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Da_goofy_spaceshit
+  - name: enemy 1_Frame_0
     originalName: 
-    pivot: {x: 0.516129, y: -0.032258064}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 31
-      height: 31
-    spriteID: 12869e943f06a1544af6e4069effb552
+      width: 32
+      height: 32
+    spriteID: c8b0a401bf52f2840a9cbc0f354edb18
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,23 +139,51 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: enemy 1_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 44
+      width: 32
+      height: 32
+    spriteID: 95a7a37974fa31b46ab5f4dc2ef3e3c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 44}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1509630357
-    name: Da_goofy_spaceshit
+    guid: 1180664207
+    name: enemy 1
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Da_goofy_spaceshit
+    - name: enemy 1_Frame_0
       frameIndex: 0
       cellRect:
         x: 0
-        y: 1
-        width: 31
-        height: 31
-      spriteId: 12869e943f06a1544af6e4069effb552
+        y: 0
+        width: 32
+        height: 32
+      spriteId: c8b0a401bf52f2840a9cbc0f354edb18
+    - name: enemy 1_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      spriteId: 95a7a37974fa31b46ab5f4dc2ef3e3c2
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -164,7 +192,7 @@ ScriptedImporter:
     ignorePlatformSupport: 0
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
