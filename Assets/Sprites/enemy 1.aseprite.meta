@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638497231491160760
+  platformSettingsDirtyTick: 638497279532452506
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 32
       height: 32
-    spriteID: c8b0a401bf52f2840a9cbc0f354edb18
+    spriteID: 0db3e00756698a4469af0cdc121ff4ad
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 44
       width: 32
       height: 32
-    spriteID: 95a7a37974fa31b46ab5f4dc2ef3e3c2
+    spriteID: fa3d84e1be2dd9b48bf38fccf68e8474
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -159,6 +159,46 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 44}
+  - name: enemy 1_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 84
+      width: 32
+      height: 32
+    spriteID: 35e7e2a8713d4664f9b55d401f52c715
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 84}
+  - name: enemy 1_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 4
+      width: 32
+      height: 32
+    spriteID: becc8f378773433418360dddd3c23dc8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -175,7 +215,7 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 32
-      spriteId: c8b0a401bf52f2840a9cbc0f354edb18
+      spriteId: 0db3e00756698a4469af0cdc121ff4ad
     - name: enemy 1_Frame_1
       frameIndex: 1
       cellRect:
@@ -183,7 +223,23 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 32
-      spriteId: 95a7a37974fa31b46ab5f4dc2ef3e3c2
+      spriteId: fa3d84e1be2dd9b48bf38fccf68e8474
+    - name: enemy 1_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      spriteId: 35e7e2a8713d4664f9b55d401f52c715
+    - name: enemy 1_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      spriteId: becc8f378773433418360dddd3c23dc8
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -192,7 +248,7 @@ ScriptedImporter:
     ignorePlatformSupport: 0
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 0
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0

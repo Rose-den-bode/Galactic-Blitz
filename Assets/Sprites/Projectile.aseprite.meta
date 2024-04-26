@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5cb60f09f1345c149bcdb32d193d3172
+guid: 9dfb5aa967205ce45b2e167ec52eece3
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638497279616032014
+  platformSettingsDirtyTick: 638497242339185290
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: enemy 2_Frame_0
+  - name: Projectile
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.31578946}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 32
-      height: 32
-    spriteID: bd3e7e7573b2eaa4281da604e848cff1
+      width: 6
+      height: 19
+    spriteID: b7129ce6120feab4d94d4747c29ef4df
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,107 +139,23 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: enemy 2_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 44
-      width: 32
-      height: 32
-    spriteID: 69bb716dd33878d40b04d5b88c88eba3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 44}
-  - name: enemy 2_Frame_2
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 84
-      width: 32
-      height: 32
-    spriteID: 18b54e66e3d09f84390e7a281a5db6f3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 84}
-  - name: enemy 2_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 44
-      y: 4
-      width: 32
-      height: 32
-    spriteID: 2c55b8c8bbc27844f9ce10012ff36b03
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 44, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1180664604
-    name: enemy 2
+    guid: 1754746317
+    name: Projectile
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: enemy 2_Frame_0
+    - name: Projectile
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      spriteId: bd3e7e7573b2eaa4281da604e848cff1
-    - name: enemy 2_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      spriteId: 69bb716dd33878d40b04d5b88c88eba3
-    - name: enemy 2_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      spriteId: 18b54e66e3d09f84390e7a281a5db6f3
-    - name: enemy 2_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      spriteId: 2c55b8c8bbc27844f9ce10012ff36b03
+        x: 13
+        y: 6
+        width: 6
+        height: 19
+      spriteId: b7129ce6120feab4d94d4747c29ef4df
     linkedCells: []
     parentIndex: -1
   platformSettings:

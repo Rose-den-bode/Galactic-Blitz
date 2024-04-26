@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5cb60f09f1345c149bcdb32d193d3172
+guid: f496c7f5f27fbe64da56ae8feba1662c
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -71,7 +71,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -83,7 +83,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638497279616032014
+  platformSettingsDirtyTick: 638497290396324153
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,7 +119,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: enemy 2_Frame_0
+  - name: exlotion2
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 32
       height: 32
-    spriteID: bd3e7e7573b2eaa4281da604e848cff1
+    spriteID: 14532555a6ae813428f06ec961f5094d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,107 +139,23 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: enemy 2_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 44
-      width: 32
-      height: 32
-    spriteID: 69bb716dd33878d40b04d5b88c88eba3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 44}
-  - name: enemy 2_Frame_2
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 84
-      width: 32
-      height: 32
-    spriteID: 18b54e66e3d09f84390e7a281a5db6f3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 84}
-  - name: enemy 2_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 44
-      y: 4
-      width: 32
-      height: 32
-    spriteID: 2c55b8c8bbc27844f9ce10012ff36b03
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 44, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1180664604
-    name: enemy 2
+    guid: 682296694
+    name: exlotion2
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: enemy 2_Frame_0
+    - name: exlotion2
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
         width: 32
         height: 32
-      spriteId: bd3e7e7573b2eaa4281da604e848cff1
-    - name: enemy 2_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      spriteId: 69bb716dd33878d40b04d5b88c88eba3
-    - name: enemy 2_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      spriteId: 18b54e66e3d09f84390e7a281a5db6f3
-    - name: enemy 2_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      spriteId: 2c55b8c8bbc27844f9ce10012ff36b03
+      spriteId: 14532555a6ae813428f06ec961f5094d
     linkedCells: []
     parentIndex: -1
   platformSettings:
