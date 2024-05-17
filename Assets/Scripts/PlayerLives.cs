@@ -8,18 +8,9 @@ public class PlayerLives : MonoBehaviour
     public int lives = 3;
     public Image[] livesUI;
     public GameObject explosionPrefab;
+    public GameObject GameOverPanel;
+    public PointManager pointManager;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -42,6 +33,12 @@ public class PlayerLives : MonoBehaviour
             if (lives <= 0)
             {
                 Destroy(gameObject);
+                
+                Time.timeScale = 0;
+
+                GameOverPanel.SetActive(true);
+
+                pointManager.HighScoreUpdate();
             }
         }
     }
@@ -67,6 +64,12 @@ public class PlayerLives : MonoBehaviour
             if (lives <= 0)
             {
                 Destroy(gameObject);
+
+                Time.timeScale = 0;
+
+                GameOverPanel.SetActive(true);
+
+                pointManager.HighScoreUpdate();
             }
         }
     }
