@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +11,12 @@ public class PlayerLives : MonoBehaviour
     public GameObject explosionPrefab;
     public GameObject GameOverPanel;
     public PointManager pointManager;
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -33,6 +40,8 @@ public class PlayerLives : MonoBehaviour
             if (lives <= 0)
             {
                 Destroy(gameObject);
+
+                audioManager.PlaySFX(audioManager.death);
                 
                 Time.timeScale = 0;
 
@@ -64,6 +73,8 @@ public class PlayerLives : MonoBehaviour
             if (lives <= 0)
             {
                 Destroy(gameObject);
+
+                audioManager.PlaySFX(audioManager.death);
 
                 Time.timeScale = 0;
 

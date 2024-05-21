@@ -7,8 +7,14 @@ public class Projectile : MonoBehaviour
     public float moveSpeed;
     public GameObject explosionPrefab;
     private PointManager pointManager;
+    AudioManager audioManager;
 
     // Start is called before the first frame update
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     void Start()
     {
         pointManager = GameObject.Find("PointManager").GetComponent<PointManager>();
@@ -28,6 +34,7 @@ public class Projectile : MonoBehaviour
             Destroy(collision.gameObject);
             pointManager.UpdateScore(10);
             Destroy(gameObject);
+            audioManager.PlaySFX(audioManager.death);
         }
 
         else if (collision.gameObject.tag == "Enemy 2")
@@ -36,6 +43,7 @@ public class Projectile : MonoBehaviour
             Destroy(collision.gameObject);
             pointManager.UpdateScore(20);
             Destroy(gameObject);
+            audioManager.PlaySFX(audioManager.death);
         }
 
         else if (collision.gameObject.tag == "Enemy 3")
@@ -44,6 +52,7 @@ public class Projectile : MonoBehaviour
             Destroy(collision.gameObject);
             pointManager.UpdateScore(40);
             Destroy(gameObject);
+            audioManager.PlaySFX(audioManager.death);
         }
 
         if (collision.gameObject.tag == "Boundary")

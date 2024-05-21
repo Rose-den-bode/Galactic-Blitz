@@ -10,6 +10,7 @@ TagManager:
   - Enemy 3
   - Undefined
   - Enemy Projectile
+  - Audio
   layers:
   - Default
   - TransparentFX
