@@ -8,6 +8,7 @@ public class WaveManager : MonoBehaviour
 {
     public GameObject enemyWaveCheck;
     public List<GameObject> waveForms;
+    private bool waveEmptie;
 
     private void Start()
     {
@@ -16,7 +17,7 @@ public class WaveManager : MonoBehaviour
 
     private void Update()
     {
-        
+        WaveChecker();
     }
 
     private void WaveChecker()
