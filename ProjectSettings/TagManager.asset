@@ -10,6 +10,7 @@ TagManager:
   - Audio
   - Alien
   - EnemyBullet
+  - FriendlyBullet
   layers:
   - Default
   - TransparentFX

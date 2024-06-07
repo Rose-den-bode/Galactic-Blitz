@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3352240926023918144}
   - component: {fileID: 3984437313197229573}
+  - component: {fileID: 5961222984771698979}
+  - component: {fileID: 731221296215984491}
   m_Layer: 0
   m_Name: Block_Left_00
   m_TagString: Untagged
@@ -84,6 +86,68 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &5961222984771698979
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286307157566638116}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09395987, y: -0.124898046}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8129189, y: 0.74983203}
+  m_EdgeRadius: 0
+--- !u!114 &731221296215984491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286307157566638116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e7f9cfd8c3025b42bab86db8d2902c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  states:
+  - {fileID: 1221761288, guid: 9a924240aa5404b4a845db45c3fc12dd, type: 3}
+  - {fileID: -526013140, guid: 9a924240aa5404b4a845db45c3fc12dd, type: 3}
+  - {fileID: 1710964122, guid: 9a924240aa5404b4a845db45c3fc12dd, type: 3}
+  - {fileID: 1618878640, guid: 9a924240aa5404b4a845db45c3fc12dd, type: 3}
 --- !u!1 &3951058333034735290
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +191,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6562451357834455348}
   - component: {fileID: 3871592261600403224}
+  - component: {fileID: 859242426579643187}
+  - component: {fileID: 4550003439395506215}
   m_Layer: 0
   m_Name: Block_Right_00
   m_TagString: Untagged
@@ -201,3 +267,65 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &859242426579643187
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4036143810113690251}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.09379667, y: -0.124985814}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.81259805, y: 0.7500284}
+  m_EdgeRadius: 0
+--- !u!114 &4550003439395506215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4036143810113690251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e7f9cfd8c3025b42bab86db8d2902c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  states:
+  - {fileID: -1394706443, guid: 9a924240aa5404b4a845db45c3fc12dd, type: 3}
+  - {fileID: 306535897, guid: 9a924240aa5404b4a845db45c3fc12dd, type: 3}
+  - {fileID: 271176798, guid: 9a924240aa5404b4a845db45c3fc12dd, type: 3}
+  - {fileID: -1088698816, guid: 9a924240aa5404b4a845db45c3fc12dd, type: 3}
