@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
             if (shipStats.currentLives <= 0)
             {
                 Debug.Log("GAME OVER");
-                // Game Over
+                SaveManager.SaveProgress();
             }
             else
             {
@@ -64,6 +64,36 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void AddHealth()
+    {
+        if (shipStats.currentHealth == shipStats.maxHealth)
+        {
+            UIManager.UpdateScore(250);
+        }
+        else 
+        {
+            shipStats.currentHealth++;
+            UIManager.UpdateHealthbar(shipStats.currentHealth);
+        }
+
+
+    }
+
+
+    public void AddLife()
+    {
+        if (shipStats.currentLives == shipStats.maxLives)
+        {
+            UIManager.UpdateScore(1000);
+        }
+        else
+        {
+            shipStats.currentLives++;
+            UIManager.UpdateLives(shipStats.currentLives);
+        }
+
+
+    }
 
     private IEnumerator Shoot()
     {
@@ -80,6 +110,7 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         shipStats.currentHealth = shipStats.maxHealth;
+        UIManager.UpdateHealthbar(shipStats.currentHealth);
 
         transform.position = startPos;
     }

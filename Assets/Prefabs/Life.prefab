@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 518384704844329176}
   - component: {fileID: 7800114736704083594}
   - component: {fileID: 3626414970024628369}
+  - component: {fileID: 4409550865831274423}
+  - component: {fileID: 3919844696383722125}
+  - component: {fileID: 6924604350852449867}
   m_Layer: 0
   m_Name: Life
   m_TagString: Untagged
@@ -152,3 +155,56 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.626508, y: 0.75438833}
   m_EdgeRadius: 0
+--- !u!114 &4409550865831274423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5102872704523414064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdf64da1b7f916c4c90c44222db30312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSpeed: 7
+--- !u!114 &3919844696383722125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5102872704523414064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61bf84448815baa4db2b25297ef87ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seconds: 3
+--- !u!50 &6924604350852449867
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5102872704523414064}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

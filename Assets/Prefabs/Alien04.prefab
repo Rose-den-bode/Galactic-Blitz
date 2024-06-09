@@ -166,4 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreValue: 200
+  coinPrefab: {fileID: 457960873801097265, guid: 0414d1b82cb25354f83da60698b10376, type: 3}
+  lifePrefab: {fileID: 5102872704523414064, guid: 92a7bf391b1f05d42b5c67a3598996db, type: 3}
+  healthPrefab: {fileID: 5686856745131140294, guid: 83e7870c0ab38764688a1bb4469a01c0, type: 3}
   explosion: {fileID: 2653055734425171872, guid: 4087c4c003d68854aa41d50b59bee03e, type: 3}
