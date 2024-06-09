@@ -9,6 +9,7 @@ public class Mothership : MonoBehaviour
 
     public int scoreValue;
 
+
     private const float MAX_LEFT = -10f;
     private float speed = 5f;
 
@@ -23,6 +24,11 @@ public class Mothership : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-            
+            if (collision.gameObject.CompareTag("FriendlyBullet"))
+        {
+            UIManager.UpdateScore(scoreValue);
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
     }
 }

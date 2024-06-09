@@ -23,6 +23,9 @@ public class Player : MonoBehaviour
         shipStats.currentLives = shipStats.maxLives;
 
         transform.position = startPos;
+
+        UIManager.UpdateHealthbar(shipStats.currentHealth);
+        UIManager.UpdateLives(shipStats.currentLives);
     }
 
     // Update is called once per frame
@@ -42,12 +45,14 @@ public class Player : MonoBehaviour
     private void TakeDamage()
     {
         shipStats.currentHealth--;
+        UIManager.UpdateHealthbar(shipStats.currentHealth);
 
-        if(shipStats.currentHealth <= 0)
+        if (shipStats.currentHealth <= 0)
         {
             shipStats.currentLives--;
+            UIManager.UpdateLives(shipStats.currentLives);
 
-            if(shipStats.currentLives <= 0)
+            if (shipStats.currentLives <= 0)
             {
                 Debug.Log("GAME OVER");
                 // Game Over

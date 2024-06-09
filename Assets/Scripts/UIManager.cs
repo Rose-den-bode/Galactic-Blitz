@@ -20,7 +20,10 @@ public class UIManager : MonoBehaviour
     public Image[] lifeSprites;
     public Image healthBar;
 
-    public SpriteSortPoint[] healthBars;
+    public Sprite[] healthBars;
+
+    private Color32 active = new Color(1, 1, 1, 1);
+    private Color32 inactive = new Color(1, 1, 1, 0.25f);
 
 
     private static UIManager instance;
@@ -36,6 +39,45 @@ public class UIManager : MonoBehaviour
 
     public static void UpdateLives(int l)
     {
+        foreach (Image i in instance.lifeSprites)
+        {
+            i.color = instance.inactive;
+        }
+
+        for (int i = 0; i < l; i++)
+        {
+            instance.lifeSprites[i].color = instance.active;
+        }
 
     }
+
+    public static void UpdateHealthbar(int h)
+    {
+        instance.healthBar.sprite = instance.healthBars[h];
+    }
+
+    public static void UpdateScore(int s)
+    {
+        instance.score += s;
+        instance.scoreText.text = instance.score.ToString("000,000");
+    }
+
+    public static void UpdateHighscore()
+    {
+        //TODO
+    }
+
+    public static void UpdateWave()
+    {
+        instance.wave++;
+        instance.waveText.text = instance.wave.ToString();
+    }
+
+    public static void UpdateCoins()
+    {
+
+        //TODO
+
+    }
+
 }

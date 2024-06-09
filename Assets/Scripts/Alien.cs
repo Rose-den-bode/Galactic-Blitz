@@ -10,6 +10,8 @@ public class Alien : MonoBehaviour
 
     public void kill()
     {
+        UIManager.UpdateScore(scoreValue);
+
         AlienMaster.allAliens.Remove(gameObject);
 
         Instantiate(explosion, transform.position, Quaternion.identity);
