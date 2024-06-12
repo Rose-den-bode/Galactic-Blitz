@@ -12,9 +12,9 @@ public class SaveObject
         highscore = 0;
 
         shipstats = new ShipStats();
-        shipstats.maxHealth = 3;
+        shipstats.maxHealth = 1;
         shipstats.maxLives = 3;
         shipstats.shipSpeed = 3;
-        shipstats.fireRate = 0.5f;
+        shipstats.fireRate = 1f;
     }
 }

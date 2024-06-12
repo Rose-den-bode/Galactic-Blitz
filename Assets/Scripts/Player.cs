@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     public ShipStats shipStats;
 
+    public AudioClip shootSFX;
+    public AudioClip shipDamageSFX;
+    public AudioClip exsplotionSFX;
+
+    public GameObject explosion;
     public GameObject bulletPrefab;
 
     private const float MAX_LEFT = -8.3f;
@@ -44,11 +50,14 @@ public class Player : MonoBehaviour
 
     private void TakeDamage()
     {
+        AudioManager.PlaySoundEffect(shipDamageSFX);
         shipStats.currentHealth--;
         UIManager.UpdateHealthbar(shipStats.currentHealth);
 
         if (shipStats.currentHealth <= 0)
         {
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            AudioManager.PlaySoundEffect(exsplotionSFX);
             shipStats.currentLives--;
             UIManager.UpdateLives(shipStats.currentLives);
 
@@ -99,6 +108,7 @@ public class Player : MonoBehaviour
     {
         isShooting = true;
         Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        AudioManager.PlaySoundEffect(shootSFX);
         yield return new WaitForSeconds(shipStats.fireRate);
         isShooting = false;
     }

@@ -144,3 +144,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreValue: 500
+  explosion: {fileID: 2653055734425171872, guid: 4087c4c003d68854aa41d50b59bee03e, type: 3}
+  exsplotionSFX: {fileID: 8300000, guid: 051bc7448af06464da69f69e2ec7fc55, type: 3}

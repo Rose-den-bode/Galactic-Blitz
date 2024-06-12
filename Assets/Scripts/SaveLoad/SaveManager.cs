@@ -19,7 +19,7 @@ public class SaveManager : MonoBehaviour
 
     private void Start()
     {
-        LoadProgress();
+        SaveObject so = SaveLoad.LoadState();
     }
 
     public static void SaveProgress()
@@ -30,6 +30,7 @@ public class SaveManager : MonoBehaviour
         so.highscore = UIManager.GetHighscore();
         so.shipstats = GameObject.FindWithTag("Player").GetComponent<Player>().shipStats = so.shipstats;
 
+        SaveLoad.SaveState(so);
     }
 
     public static void LoadProgress()

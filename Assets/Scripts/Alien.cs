@@ -12,6 +12,7 @@ public class Alien : MonoBehaviour
     public GameObject healthPrefab;
 
     public GameObject explosion;
+    public AudioClip exsplotionSFX;
 
     private const int LIFE_CHANCE = 1;
     private const int HEALTH_CHANCE = 10;
@@ -33,6 +34,7 @@ public class Alien : MonoBehaviour
             Instantiate(coinPrefab, transform.position, Quaternion.identity);
 
         Instantiate(explosion, transform.position, Quaternion.identity);
+        AudioManager.PlaySoundEffect(exsplotionSFX);
 
         if (AlienMaster.allAliens.Count == 0)
             GameManager.SpawnNewWave();

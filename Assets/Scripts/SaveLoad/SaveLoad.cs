@@ -37,6 +37,13 @@ public static class SaveLoad
                 Debug.LogWarning("Failed to load save");
             }
         }
+        else
+        {
+            SaveState(so);
+        }
+
+        so.shipstats.currentLives = so.shipstats.maxLives;
+        so.shipstats.currentHealth = so.shipstats.maxHealth;
 
         return so;
     }

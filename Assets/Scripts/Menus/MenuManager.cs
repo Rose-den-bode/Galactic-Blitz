@@ -45,7 +45,7 @@ public GameObject pauseMenu;
         
     }
 
-    public  void OpenInShop()
+    public  void CloseShop()
     {
         Instance.mainMenu.SetActive(true);
         Instance.shopMenu.SetActive(false);
@@ -55,6 +55,12 @@ public GameObject pauseMenu;
     public static void OpenInGame()
     {
         Time.timeScale = 1;
+
+        Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player.shipStats.currentHealth = player.shipStats.maxHealth;
+        player.shipStats.currentLives = player.shipStats.maxLives;
+
+        UIManager.UpdateHealthbar(player.shipStats.currentHealth);
 
         Instance.mainMenu.SetActive(false);
         Instance.pauseMenu.SetActive(false);

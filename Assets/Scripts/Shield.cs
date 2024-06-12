@@ -8,6 +8,7 @@ public class Shield : MonoBehaviour
     public Sprite[] states;
 
     private int health;
+    public AudioClip shieldDamageSFX;
     private SpriteRenderer sr;
 
     // Start is called before the first frame update
@@ -23,6 +24,7 @@ public class Shield : MonoBehaviour
         {
             Destroy(collision.gameObject);
             health--;
+            AudioManager.PlaySoundEffect(shieldDamageSFX);
 
             if (health <= 0)
                 Destroy(gameObject);

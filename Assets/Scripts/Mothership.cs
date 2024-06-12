@@ -9,6 +9,9 @@ public class Mothership : MonoBehaviour
 
     public int scoreValue;
 
+    public GameObject explosion;
+    public AudioClip exsplotionSFX;
+
 
     private const float MAX_LEFT = -10f;
     private float speed = 5f;
@@ -27,6 +30,8 @@ public class Mothership : MonoBehaviour
             if (collision.gameObject.CompareTag("FriendlyBullet"))
         {
             UIManager.UpdateScore(scoreValue);
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            AudioManager.PlaySoundEffect(exsplotionSFX);
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }

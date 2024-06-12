@@ -148,6 +148,7 @@ MonoBehaviour:
   - {fileID: -526013140, guid: 9a924240aa5404b4a845db45c3fc12dd, type: 3}
   - {fileID: 1710964122, guid: 9a924240aa5404b4a845db45c3fc12dd, type: 3}
   - {fileID: 1618878640, guid: 9a924240aa5404b4a845db45c3fc12dd, type: 3}
+  shieldDamageSFX: {fileID: 8300000, guid: 3374477594ec6c44b8e08e8c0ace94dd, type: 3}
 --- !u!1 &3951058333034735290
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,3 +330,4 @@ MonoBehaviour:
   - {fileID: 306535897, guid: 9a924240aa5404b4a845db45c3fc12dd, type: 3}
   - {fileID: 271176798, guid: 9a924240aa5404b4a845db45c3fc12dd, type: 3}
   - {fileID: -1088698816, guid: 9a924240aa5404b4a845db45c3fc12dd, type: 3}
+  shieldDamageSFX: {fileID: 8300000, guid: 3374477594ec6c44b8e08e8c0ace94dd, type: 3}
