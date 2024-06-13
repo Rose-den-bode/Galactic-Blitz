@@ -34,8 +34,25 @@ public GameObject pauseMenu;
 
     public static void OpenGameOver()
     {
+        Time.timeScale = 0;
+        UIManager.HighscoreCheck();
+
         Instance.gameOverMenu.SetActive(true);
         Instance.inGameMenu.SetActive(false);
+    }
+
+    public static void GameOverToMainMenu()
+    {
+        Time.timeScale = 1;
+
+        Instance.inGameMenu.SetActive(false);
+        Instance.pauseMenu.SetActive(false);
+        Instance.shopMenu.SetActive(false);
+        Instance.gameOverMenu.SetActive(false);
+
+        Instance.mainMenu.SetActive(true);
+        UIManager.HighscoreCheck();
+        GameManager.CancelGame();
     }
 
     public  void OpenShop()

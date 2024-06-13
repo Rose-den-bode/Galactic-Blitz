@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -37,13 +35,13 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.A) && transform.position.x > MAX_LEFT)
+        if (Input.GetKey(KeyCode.A) && transform.position.x > MAX_LEFT)
             transform.Translate(Vector2.left * Time.deltaTime * shipStats.shipSpeed);
 
         if (Input.GetKey(KeyCode.D) && transform.position.x < MAX_RIGHT)
             transform.Translate(Vector2.right * Time.deltaTime * shipStats.shipSpeed);
 
-        if(Input.GetKey(KeyCode.Space) && !isShooting)
+        if (Input.GetKey(KeyCode.Space) && !isShooting)
             StartCoroutine(Shoot());
     }
 
@@ -63,7 +61,7 @@ public class Player : MonoBehaviour
 
             if (shipStats.currentLives <= 0)
             {
-                Debug.Log("GAME OVER");
+                MenuManager.OpenGameOver();
                 SaveManager.SaveProgress();
             }
             else
@@ -79,7 +77,7 @@ public class Player : MonoBehaviour
         {
             UIManager.UpdateScore(250);
         }
-        else 
+        else
         {
             shipStats.currentHealth++;
             UIManager.UpdateHealthbar(shipStats.currentHealth);
@@ -128,7 +126,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-           if (collision.gameObject.CompareTag("EnemyBullet"))
+        if (collision.gameObject.CompareTag("EnemyBullet"))
         {
             Debug.Log("PLAYER HIT");
             TakeDamage();

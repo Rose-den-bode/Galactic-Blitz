@@ -16,6 +16,7 @@ public class AlienMaster : MonoBehaviour
 
     private const float MAX_LEFT = -8.3f;
     private const float START_Y = 0.15f;
+    private const float MAX_Y = -2.25f;
     private const float MAX_RIGHT = 8.3f;
     private const float MAX_MOVE_SPEED = 0.02f;
 
@@ -74,6 +75,7 @@ public class AlienMaster : MonoBehaviour
         if(allAliens.Count > 0)
         {
             int hitMax =0;
+            int yMax = 0;
 
             for (int i = 0; i < allAliens.Count; i++)
             {
@@ -84,6 +86,9 @@ public class AlienMaster : MonoBehaviour
 
                 if (allAliens[i].transform.position.x > MAX_RIGHT || allAliens[i].transform.position.x < MAX_LEFT)
                     hitMax++;
+
+                if (allAliens[i].transform.position.y < MAX_Y)
+                    yMax++;
             }
 
             if(hitMax > 0)
@@ -92,6 +97,11 @@ public class AlienMaster : MonoBehaviour
                     allAliens[i].transform.position -= vMoveDistance;
 
                 movingRight = !movingRight;
+            }
+
+            if(yMax > 0)
+            {
+                MenuManager.OpenGameOver();
             }
 
             moveTimer = GetMoveSpeed();

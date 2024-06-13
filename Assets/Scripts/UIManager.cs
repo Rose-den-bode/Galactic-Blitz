@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
@@ -34,7 +32,7 @@ public class UIManager : MonoBehaviour
             instance = this;
         else
             Destroy(gameObject);
-        
+
     }
 
     public static void UpdateLives(int l)
@@ -73,12 +71,21 @@ public class UIManager : MonoBehaviour
 
     public static void UpdateHighscore(int hs)
     {
-        if(instance.highscore < hs)
+        if (instance.highscore < hs)
         {
-            instance.highscore = hs;         
-            instance.highscoreText.text = instance.highscore.ToString("000,000");   
+            instance.highscore = hs;
+            instance.highscoreText.text = instance.highscore.ToString("000,000");
         }
 
+    }
+
+    public static void HighscoreCheck()
+    {
+        if (instance.highscore < instance.score)
+        {
+            UpdateHighscore(instance.score);
+            SaveManager.SaveProgress();
+        }
     }
 
     public static int GetHighscore()

@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -17,7 +14,7 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
             instance = this;
         else
             Destroy(gameObject);
@@ -29,7 +26,7 @@ public class AudioManager : MonoBehaviour
 
         if (muted)
             AudioListener.pause = true;
-        
+
     }
 
     public void ToggleMute()
@@ -43,6 +40,8 @@ public class AudioManager : MonoBehaviour
 
         if (muted)
             AudioListener.pause = true;
+        else
+            AudioListener.pause = false;
 
     }
 
@@ -55,6 +54,6 @@ public class AudioManager : MonoBehaviour
 
 
 
-  
+
 
 }
