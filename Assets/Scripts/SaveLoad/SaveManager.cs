@@ -28,7 +28,7 @@ public class SaveManager : MonoBehaviour
 
         so.coins = Invetory.currentCoins;
         so.highscore = UIManager.GetHighscore();
-        so.shipstats = GameObject.FindWithTag("Player").GetComponent<Player>().shipStats = so.shipstats;
+        so.shipstats = GameObject.FindWithTag("Player").GetComponent<Player>().shipStats;
 
         SaveLoad.SaveState(so);
     }

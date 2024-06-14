@@ -5523,7 +5523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d341d5a131cdf07449851a1916b70653, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ship: {fileID: 0}
+  ship: {fileID: 1139947157820823664, guid: 6a9295a4005be784ca6d460cc2920334, type: 3}
 --- !u!4 &1602413440
 Transform:
   m_ObjectHideFlags: 0

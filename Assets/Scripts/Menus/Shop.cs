@@ -48,11 +48,15 @@ public class Shop : MonoBehaviour
             Invetory.currentCoins -= nextHealthCost;
             currentGold.text = Invetory.currentCoins + "G";
 
-            player.shipStats.maxHealth++;
+            player.shipStats.maxHealth += 1;
+            Debug.Log(player.shipStats.maxHealth);
+
             currentMaxHealth = player.shipStats.maxHealth;
 
             SaveManager.SaveProgress();
             UpdateUIAndTotals();
+
+            
 
             AudioManager.PlaySoundEffect(sale);
         }
@@ -70,10 +74,12 @@ public class Shop : MonoBehaviour
             currentGold.text = Invetory.currentCoins + "G";
 
             player.shipStats.fireRate -= 0.1f;
+
             currentFireRate = player.shipStats.fireRate;
 
             SaveManager.SaveProgress();
             UpdateUIAndTotals();
+
 
             AudioManager.PlaySoundEffect(sale);
         }

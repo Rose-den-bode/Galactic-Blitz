@@ -45,6 +45,10 @@ public class Player : MonoBehaviour
             StartCoroutine(Shoot());
     }
 
+    public void IncreaseMaxHealth(int amount)
+    {
+        shipStats.maxHealth += amount;
+    }
 
     private void TakeDamage()
     {
